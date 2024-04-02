@@ -1,5 +1,5 @@
 import "./Header.scss";
-import storeForDefault from "../../app/store/store";
+import storeForDefault from "../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
 

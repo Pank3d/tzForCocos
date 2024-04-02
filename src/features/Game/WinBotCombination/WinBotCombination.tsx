@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import storeForDefault from "../../../app/store/store";
+import storeForDefault from "../../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
 
 const BotCombination = observer(() => {
@@ -19,11 +19,6 @@ const BotCombination = observer(() => {
       setDisplayedCombinationBot(imageCut);
     }
   };
-
-  console.log(storeForDefault.changeStoreOfPlayer);
-  console.log(storeForDefault.stateOfBot);
-  console.log(storeForDefault.stateOfPlayer);
-  console.log(storeForDefault.counter);
 
   useEffect(() => {
     drawPicture();

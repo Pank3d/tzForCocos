@@ -1,5 +1,5 @@
 import { observer } from "mobx-react-lite";
-import storeForDefault from "../../app/store/store";
+import storeForDefault from "../../app/store/storeFotDefault";
 
 export const ParagraphWin = observer(() => {
   return (

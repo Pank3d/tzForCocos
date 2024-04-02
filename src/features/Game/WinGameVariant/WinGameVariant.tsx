@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import storeForDefault from "../../../app/store/store";
+import storeForDefault from "../../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
 
 const PlayerVariant = observer(() => {

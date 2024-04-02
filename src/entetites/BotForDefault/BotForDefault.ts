@@ -1,4 +1,5 @@
-import storeForDefault from "../../app/store/store";
+import storeForDefault from "../../app/store/storeFotDefault";
+
 
 export const generateRandomAction = () => {
   const randomAction = ["Paper", "Rock", "Cut"];
@@ -43,10 +44,7 @@ export const checkResult = () => {
     storeForDefault.decr();
     storeForDefault.setBotWin();
   } else {
-    
   }
 
-  console.log(storeForDefault.counter)
-  ;
+  console.log(storeForDefault.counter);
 };
-

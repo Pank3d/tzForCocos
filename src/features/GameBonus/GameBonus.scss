@@ -1,0 +1,92 @@
+.game_bonus_wrapper {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.game_bonus_play_icons {
+  position: absolute;
+  display: flex;
+
+  .paper_bonus_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    left: 340px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .rock_bonus_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    background-color: white;
+    top: 260px;
+    left: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .ssisors_bonus_container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .spock_bonus_container{
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    right: 250px;
+    top:70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .lizard_bonus_container{
+         width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    right: 300px;
+    top:260px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.game_bonus_container {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  position: relative;
+}

@@ -7,9 +7,8 @@ const PlayerVariant = observer(() => {
   const rockImage: string = "icon-rock.svg";
   const imageCut: string = "icon-scissors.svg";
 
-
-
-  const [displayedCombinationPlayer, setDisplayedCombinationPlayer] = useState<string>("");
+  const [displayedCombinationPlayer, setDisplayedCombinationPlayer] =
+    useState<string>("");
 
   const drawPicture = () => {
     if (storeForDefault.stateOfPlayer === "Rock") {
@@ -34,3 +33,4 @@ const PlayerVariant = observer(() => {
 });
 
 export default PlayerVariant;
+

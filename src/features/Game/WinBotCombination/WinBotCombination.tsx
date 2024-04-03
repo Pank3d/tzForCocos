@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import storeForDefault from "../../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
+import storeForDefault from "../../../app/store/storeFotDefault";
 
 const BotCombination = observer(() => {
   const paperImage: string = "icon-paper.svg";

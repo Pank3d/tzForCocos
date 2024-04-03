@@ -1,5 +1,4 @@
 import Game from "../../features/Game/Game";
-import WinGameVariant from "../../features/Game/WinGameVariant/WinGameVariant";
 import storeForDefault from "../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
 import WinBotCombination from "../../features/Game/WinBotCombination/WinBotCombination";
@@ -10,6 +9,7 @@ import { checkResult } from "../../entetites/BotForDefault/BotForDefault";
 import { ParagraphWin } from "../../shared/ParagraphWin/ParagraphWin";
 import Header from "../../shared/HeaderForDefault/Header";
 import Footer from "../../shared/Footer/Footer";
+import WinGameVariant from "../../features/Game/WinGameVariant/WinGameVariant";
 
 const Home = observer(() => {
   useEffect(() => {

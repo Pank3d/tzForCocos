@@ -34,7 +34,7 @@ class Store {
 
   incr() {
     this.counter += 1;
-    
+
     localStorage.setItem("counter", this.counter.toString());
   }
 

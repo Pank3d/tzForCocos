@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import storeForBonus from "../../../app/store/StoreaForBonus";
+;
 
 const BotGenerateBonus = () => {
   const paperImage: string = "icon-paper.svg";

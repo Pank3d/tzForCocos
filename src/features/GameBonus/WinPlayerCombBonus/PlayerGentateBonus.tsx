@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import storeForBonus from "../../../app/store/StoreaForBonus";
 
+
 const PlayerGenerateBonus = () => {
   const paperImage: string = "icon-paper.svg";
   const rockImage: string = "icon-rock.svg";

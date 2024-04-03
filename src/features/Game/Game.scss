@@ -2,66 +2,68 @@
     margin-top: 10%;
     display: flex;
     justify-content: center;
+    
 }
 
 
 
-.game_play_icons {
-    position: absolute;
-    display: flex;
+    .game_play_icons {
+        position: absolute;
+        display: flex;
 
-    .paper_container {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    right: 60px;
-    bottom: 40px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+        .paper_container {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        right: 60px;
+        bottom: 130px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-.rock_container {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    background-color: white;
-    top: 200px;
-    right: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+    .rock_container {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        background-color: white;
+        top: 100px;
+        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-.ssisors_container {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    background-color: white;
-    left: 40px;
-    bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+    .ssisors_container {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        background-color: white;
+        left: 40px;
+        bottom: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 
-}
+    }
 
-.game_container {
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    height: 400px;
-    position: relative; 
-}
+    .game_container {
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        height: 400px;
+        position: relative; 
+        align-items: center;
+    }
 

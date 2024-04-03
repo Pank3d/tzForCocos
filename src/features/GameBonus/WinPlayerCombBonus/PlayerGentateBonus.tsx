@@ -30,7 +30,7 @@ const PlayerGenerateBonus = () => {
   }, [storeForBonus.stateOfPlayerBonus, storeForBonus.stateOfBotBonus]);
 
   return (
-    <div>
+    <div className="container_bonus">
       <div className="bot_bonus_menu">
         <p className="pick">Ваш Выбор</p>
         <img src={`../../../../images/${displayedPlayerCombination}`} />

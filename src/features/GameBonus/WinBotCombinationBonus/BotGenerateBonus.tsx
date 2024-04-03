@@ -30,7 +30,7 @@ const BotGenerateBonus = () => {
   }, [storeForBonus.stateOfPlayerBonus, storeForBonus.stateOfBotBonus]);
 
   return (
-    <div>
+    <div className="container_bonus">
       <div className="bot_bonus_menu">
         <p className="pick">Выбор Бота</p>
         <img src={`../../../../images/${displayedBotCombination}`} />

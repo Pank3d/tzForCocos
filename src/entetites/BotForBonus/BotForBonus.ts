@@ -2,8 +2,11 @@ import storeForBonus from "../../app/store/StoreaForBonus";
 
 export const generateRandomActionBonus = () => {
   const randomAction = ["Paper", "Rock", "Cut", "Spock", "Lizard"];
-  storeForBonus.setBotBonus(randomAction[Math.floor(Math.random() * 5)]);
+  const randomIndex = Math.floor(Math.random() * randomAction.length);
+  const randomChoice = randomAction[randomIndex];
+  storeForBonus.setBotBonus(randomChoice);
 };
+
 export const checkResultBonus = () => {
   const { stateOfBotBonus, stateOfPlayerBonus } = storeForBonus;
 
@@ -18,11 +21,13 @@ export const checkResultBonus = () => {
     (stateOfBotBonus === "Rock" && stateOfPlayerBonus === "Cut") ||
     (stateOfBotBonus === "Lizard" && stateOfPlayerBonus === "Paper") ||
     (stateOfBotBonus === "Spock" && stateOfPlayerBonus === "Rock") ||
-    (stateOfBotBonus === "Spock" && stateOfPlayerBonus === "Cut")
+    (stateOfBotBonus === "Lizard" && stateOfPlayerBonus === "Cut")
   ) {
     storeForBonus.incrBonus();
     storeForBonus.setPlayerWinBonus();
   } else if (
+    (stateOfBotBonus === "Paper" && stateOfPlayerBonus === "Lizard") ||
+    (stateOfBotBonus === "Rock" && stateOfPlayerBonus === "Spock") ||
     (stateOfBotBonus === "Paper" && stateOfPlayerBonus === "Cut") ||
     (stateOfBotBonus === "Rock" && stateOfPlayerBonus === "Paper") ||
     (stateOfBotBonus === "Cut" && stateOfPlayerBonus === "Spock") ||
@@ -36,6 +41,5 @@ export const checkResultBonus = () => {
     storeForBonus.decrBonus();
     storeForBonus.setBotWinBonus();
   } else {
-    // Ничья
   }
 };

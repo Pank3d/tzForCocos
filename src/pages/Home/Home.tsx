@@ -31,26 +31,27 @@ const Home = observer(() => {
   }
 
   return (
-    
-    <><Header />
-    <main className="main">
-      {storeForDefault.changeStoreOfPlayer === true ? (
-        <div className="game_end_wrapper">
-          <div className="play_result">
-            <WinGameVariant />
-            <Button text="Играть снова" onClick={resetGame} />
-            <Button text="Сбросить Счет" onClick={resetLocal}></Button>
-            <WinBotCombination />
+    <>
+      <Header />
+      <main className="main">
+        {storeForDefault.changeStoreOfPlayer === true ? (
+          <div className="game_end_wrapper">
+            <div className="play_result">
+              <WinGameVariant />
+              <Button text="Играть снова" onClick={resetGame} />
+              <Button text="Сбросить Счет" onClick={resetLocal}></Button>
+              <WinBotCombination />
+            </div>
+            <ParagraphWin />
           </div>
-          <ParagraphWin />
-        </div>
-      ) : (
-        <>
-          <Game />
-        </>
-      )}
-    </main>
-    <Footer text= "Бонус" text1="Правила" link="bonus" link1="rules" />
+        ) : (
+          <>
+            <Game />
+            <Footer text="Бонус" text1="Правила" link="bonus" link1="rules" />
+          </>
+        )}
+      </main>
+
     </>
   );
 });

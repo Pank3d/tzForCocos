@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-#root{
+#root {
   height: 100%;
   overflow: hidden;
 }
@@ -16,4 +16,264 @@ body {
 .wrapper {
   background: rgb(70, 143, 234);
   height: 100%;
+  .header {
+    width: 100%;
+  }
+  main {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .wrapper {
+    .game_end_wrapper{
+      margin-top: 20%;
+    }
+    }
+    .rules_bonus {
+      img {
+        width: 70%;
+      }
+
+      .rules {
+        img {
+          width: 70%;
+        }
+      }
+    }
+    .game_end_wrapper {
+      .player_menu {
+        width: 150px;
+        height: 150px;
+        img {
+          width: 50%;
+          height: 50%;
+        }
+      }
+      .bot_menu {
+        width: 150px;
+        height: 150px;
+        img {
+          width: 50%;
+          height: 50%;
+        }
+      }
+    }
+    .game_end_wrapper {
+      .container_bonus {
+        .bot_bonus_menu {
+          width: 150px;
+          height: 150px;
+          img {
+            width: 50%;
+            height: 50%;
+          }
+        }
+      }
+    }
+  }
+
+
+@media screen and (max-width: 511px) {
+  .wrapper {
+    .game_end_wrapper{
+      margin-top: 40%;
+    }
+    .rules_bonus {
+      img {
+        width: 70%;
+      }
+
+      .rules {
+        img {
+          width: 70%;
+        }
+      }
+    }
+    .game_end_wrapper {
+      .player_menu {
+        width: 130px;
+        height: 140px;
+        img {
+          width: 40%;
+          height: 40%;
+        }
+      }
+      .bot_menu {
+        width: 130px;
+        height: 140px;
+        img {
+          width: 40%;
+          height: 40%;
+        }
+      }
+    }
+    .game_end_wrapper {
+      .container_bonus {
+        .bot_bonus_menu {
+          width: 130px;
+          height: 130px;
+          img {
+            width: 40%;
+            height: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .wrapper {
+    .play_result {
+      .player_menu {
+        width: 80px;
+        height: 80px;
+        .pick {
+          font-size: 8px;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .bot_menu {
+        width: 80px;
+        height: 80px;
+        .pick {
+          font-size: 8px;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  .header {
+    width: 100%;
+    .logo {
+      height: 50%;
+      padding-top: 10%;
+    }
+  }
+  .rules_bonus {
+    img {
+      width: 70%;
+    }
+
+    .rules {
+      img {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .wrapper {
+    .game_bonus_back {
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+    .paper_bonus_container {
+      top: 30px;
+      left: 300px;
+    }
+
+    .rock_bonus_container {
+      top: 200px;
+      left: 170px;
+    }
+
+    .spock_bonus_container {
+      right: 200px;
+      top: 50px;
+    }
+
+    .lizard_bonus_container {
+      top: 200px;
+      right: 280px;
+    }
+  }
+
+  .game_back {
+    img {
+      height: 210px;
+      width: 210px;
+    }
+  }
+  .game_container {
+    .paper_container {
+      right: 0px;
+      bottom: 100px;
+    }
+
+    .ssisors_container {
+      left: 0px;
+      bottom: 100px;
+    }
+
+    .rock_container {
+      top: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .wrapper {
+    .play_result {
+      .container_bonus {
+        .bot_bonus_menu {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .wrapper {
+    .game_end_wrapper{
+      margin-top: 60%;
+    }
+    .play_result {
+      .player_menu {
+        width: 55px;
+        height: 55px;
+        .pick {
+          font-size: 8px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .bot_menu {
+        width: 55px;
+        height: 55px;
+        .pick {
+          font-size: 8px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .play_result {
+      .container_bonus {
+        .bot_bonus_menu {
+          width: 55px;
+          height: 55px;
+          .pick {
+            font-size: 6px;
+          }
+        }
+      }
+    }
+  }
 }

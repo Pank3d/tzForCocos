@@ -22,10 +22,8 @@ const BotCombination = observer(() => {
 
   useEffect(() => {
     drawPicture();
-  }, [storeForDefault.stateOfPlayer, storeForDefault.stateOfBot]); 
+  }, [storeForDefault.stateOfPlayer, storeForDefault.stateOfBot]);
 
-
-  console.log(storeForDefault.stateOfBot);
   return (
     <div className="bot_menu">
       <p className="pick">Выбор Бота</p>

@@ -90,3 +90,25 @@
   height: 400px;
   position: relative;
 }
+
+.bot_bonus_menu {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    p{
+        font-weight: 700;
+        margin-bottom: 1%;
+    }
+  }

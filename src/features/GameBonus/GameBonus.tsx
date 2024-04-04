@@ -4,6 +4,12 @@ import Footer from "../../shared/Footer/Footer";
 import "./GameBonus.scss";
 import { generateRandomActionBonus } from "../../entetites/BotForBonus/BotForBonus";
 import { useEffect } from "react";
+import bgPentagon from "../../shared/images/bg-pentagon.svg"
+import iconPaper from "../../shared/images/icon-paper.svg"
+import iconRock from "../../shared/images/icon-rock.svg"
+import iconSsisors from "../../shared/images/icon-scissors.svg"
+import iconSpock from "../../shared/images/icon-spock.svg"
+import iconLizard from "../../shared/images/icon-lizard.svg"
 const GameBonus = observer(() => {
  useEffect(() => {
    generateRandomActionBonus();
@@ -13,27 +19,27 @@ const GameBonus = observer(() => {
       <div className="game_bonus_wrapper">
         <div className="game_bonus_container">
           <div className="game_bonus_back">
-            <img src="../../../images/bg-pentagon.svg" />
+            <img src={bgPentagon} />
           </div>
           <div className="game_bonus_play_icons">
             <div
               className="paper_bonus_container"
               onClick={() => storeForBonus.setPlayerBonus("Paper")}
             >
-              <img src="../../../images/icon-paper.svg" className="paper" />
+              <img src={iconPaper} className="paper" />
             </div>
             <div
               className="rock_bonus_container"
               onClick={() => storeForBonus.setPlayerBonus("Rock")}
             >
-              <img src="../../../images/icon-rock.svg" className="rock" />
+              <img src={iconRock} className="rock" />
             </div>
             <div
               className="ssisors_bonus_container"
               onClick={() => storeForBonus.setPlayerBonus("Cut")}
             >
               <img
-                src="../../../images/icon-scissors.svg"
+                src={iconSsisors}
                 className="ssisors"
               />
             </div>
@@ -41,13 +47,13 @@ const GameBonus = observer(() => {
               className="spock_bonus_container"
               onClick={() => storeForBonus.setPlayerBonus("Spock")}
             >
-              <img src="../../../images/icon-spock.svg" className="spock" />
+              <img src={iconSpock} className="spock" />
             </div>
             <div
               className="lizard_bonus_container"
               onClick={() => storeForBonus.setPlayerBonus("Lizard")}
             >
-              <img src="../../../images/icon-lizard.svg" className="lizard" />
+              <img src={iconLizard} className="lizard" />
             </div>
           </div>
         </div>

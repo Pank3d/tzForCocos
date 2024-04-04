@@ -1,12 +1,13 @@
 import Footer from "../../shared/Footer/Footer";
 import "./RulesBonus.scss"
+import BonusRules from "../../shared/images/B0nus.jpg"
 
 
 const RuleBonus = () => {
   return (
     <>
       <div className="rules_bonus">
-        <img src="../../../images/B0nus.jpg" />
+        <img src={BonusRules} />
       </div>
       <Footer
         text={"Обычная"}

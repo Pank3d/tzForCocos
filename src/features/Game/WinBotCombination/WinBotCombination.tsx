@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react-lite";
 import storeForDefault from "../../../app/store/storeFotDefault";
+import iconPaper from "../../../shared/images/icon-paper.svg";
+import iconRock from "../../../shared/images/icon-rock.svg";
+import iconSissors from "../../../shared/images/icon-scissors.svg";
 
 const BotCombination = observer(() => {
-  const paperImage: string = "icon-paper.svg";
-  const rockImage: string = "icon-rock.svg";
-  const imageCut: string = "icon-scissors.svg";
+  const paperImage: string = iconPaper;
+  const rockImage: string = iconRock;
+  const imageCut: string = iconSissors;
 
   const [displayedCombinationBot, setDisplayedCombinationBot] =
     useState<string>("");
@@ -27,7 +30,7 @@ const BotCombination = observer(() => {
   return (
     <div className="bot_menu">
       <p className="pick">Выбор Бота</p>
-      <img src={`../../../../images/${displayedCombinationBot}`} />
+      <img src={`${displayedCombinationBot}`} />
     </div>
   );
 });

@@ -1,6 +1,7 @@
 import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
 import storeForBonus from "../../app/store/StoreaForBonus";
+import logoBonus from "../../shared/images/logo-bonus.svg"
 
 
 const HeaderForBonus = observer(() => {
@@ -17,7 +18,7 @@ const HeaderForBonus = observer(() => {
   return (
     <header className="header">
       <div className="container">
-        <img src="../../../images/logo-bonus.svg" className="logo" />
+        <img src={logoBonus} className="logo" />
         <div className="counter">
           <div className="counter_items">
             <p className="counter_item">Счет</p>

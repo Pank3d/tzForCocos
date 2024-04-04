@@ -2,6 +2,7 @@ import "./Header.scss";
 import storeForDefault from "../../app/store/storeFotDefault";
 import { observer } from "mobx-react-lite";
 import { useEffect, useState } from "react";
+import logo from "../../shared/images/logo.svg"
 
 const Header = observer(() => {
   const [counterDisplayed, setCounterDisplayed] = useState<number>(0);
@@ -18,7 +19,7 @@ const Header = observer(() => {
   return (
     <header className="header">
       <div className="container">
-        <img src="../../../images/logo.svg" className="logo" />
+        <img src={logo} className="logo" />
         <div className="counter">
           <div className="counter_items">
             <p className="counter_item">Счет</p>
